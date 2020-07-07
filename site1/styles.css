@@ -71,21 +71,9 @@ body {
 	display: block;
 	/* padding-top: 3vw; */
 }
-.illus {
-	background: url(imgs/cityscapes.svg);
-	background-repeat: no-repeat;
-	position: relative;
-	display: block;
-	left: 10vw;
-	padding-left: 37vw;
-	top: 11.75vw;
-	padding-top: 50vw;
-	float: right;
-	border-radius: 0px 0px 30px 27px;
-}
 .title {
 	position: relative;
-	width: 296px;
+	width: 400px;
 	padding-top: 8vw;
 	font-family: "Prompt", sans-serif;
 	font-style: normal;
@@ -99,7 +87,7 @@ body {
 .subtitle {
 	position: relative;
 	padding-top: 1vw;
-	width: 283px;    
+	width: 293px;    
 	font-family: "Inter", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -126,27 +114,34 @@ body {
 	text-decoration: none;
 	color: inherit;
 }
+.illus {
+	position: relative;
+	float: right;
+	margin-top: 11.7vw;
+	right: -10vw;
+	border-radius: 0px 0px 30px 27px;
+}
 .container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
 .side_content {
-	grid-column: span 4;
+	grid-column: span 3;
 	padding-left: 7vw;
 	padding-top: 3vw;
 	text-align: left;
 }
 .main_content {
-	grid-column: span 8;
+	grid-column: span 9;
 	padding-right: 7vw;
 	padding-top: 3vw;
 }
 @media screen and (max-width: 768px) {
 	.side_content {
-	  grid-column: span 6;
+	  grid-column: span 4;
 	}
 	.main_content {
-	  grid-column: span 6;
+	  grid-column: span 8;
 	}
   }
   @media screen and (max-width: 480px) {
@@ -163,7 +158,7 @@ body {
 .accordion_title {
     padding: 0.5vw;
     padding-right: 50px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 	color: #333333;
 	font-family: "Inter", sans-serif;
 	font-style: normal;
@@ -208,3 +203,152 @@ body {
 	text-decoration: none;
 	color: inherit;
 }
+.search_wrap {
+	max-width: 53.4rem;
+}
+.search_bar {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	float: left;
+  }  
+#search_inp {
+	width: 90%;
+	height: 3rem;
+	background: rgba(86, 40, 210, 0.1);
+	outline: none;
+	border: none;
+	border-radius: .5rem;
+	padding: 0 3.5rem 0 1.5rem;
+	font-size: .7rem;
+	color: rgba(51, 51, 51, 0.48);
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.11em;
+}
+#search_submit {
+	width: 3.5rem;
+	height: 2.8rem;
+	margin-left: -3.5rem;
+	background: none;
+	border: none;
+	outline: none;
+}  
+#search_submit:hover {
+	cursor: pointer;
+}
+.sort_btn {
+	color: white;
+	background: black;
+	box-sizing: border-box;
+	display: block;
+	padding: 10px 28px;
+	border: 0;
+	float: right;
+	margin-right: 5vw;
+	border-radius: 36px;
+	cursor: pointer;
+}
+.prop_grid {
+	grid-column: 2 / span 12;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(auto, 60px));
+	grid-gap: 50px;
+} 
+.prop_card {
+	grid-column-end: span 4;
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+}  
+.prop_card:hover {
+	transform: translateY(-4px);
+} 
+.prop_image {
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 18px;
+} 
+.prop_image img {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}  
+.prop_type {
+	margin-bottom: 5px;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1vw;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	color: #333333;
+} 
+.prop_addr {
+	display: flex;
+	align-self: end;
+	align-items: left;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8vw;
+	line-height: 12px;
+	color: #777777;
+}
+.more {
+	display: flex;
+	align-self: end;
+	align-items: left;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.9vw;
+	line-height: 16px;
+	color: #333333;
+}
+@media only screen and (max-width: 1000px) {
+	.prop_card {
+	  grid-column-end: span 6;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.prop_card {
+	  grid-column-end: span 12;
+	}
+	.sort_btn {
+		visibility: hidden;
+		display: none;
+	}
+	.illus {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.prop_grid {
+	  grid-column: 2 / span 6;
+	  grid-template-columns: repeat(6, 1fr);
+	  grid-gap: 20px;
+	}
+	.prop_card {
+	  grid-column-end: span 6;
+	}
+	.sort_btn {
+		visibility: hidden;
+		display: none;
+	}
+	.illus {
+		display: none;
+		visibility: hidden;
+	}
+}
+  
