@@ -1,127 +1,210 @@
 body {
-
+	background-color: #FFFFFF;
+	padding-bottom: 5vw;
 }
 .header {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 8vw;
-    padding-right: 8vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
 }
 .nav {
-    font-family: "Inter", sans-serif;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    color: black;
-    font-size: 15px;
+	font-family: "Inter", sans-serif;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-start;
+	color: black;
+	font-size: 15px;
 }
 .nav>li {
-    margin-left: 1.3vw;
+	margin-left: 1.3vw;
 }
 .nav>li>a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 .brand {
-    font-family: "Prompt", sans-serif;
-    font-size: 31px;
-    line-height: 47px;
-    text-decoration: none;
-    color: inherit;
+	font-family: "Prompt", sans-serif;
+	font-size: 31px;
+	line-height: 47px;
+	text-decoration: none;
+	color: inherit;
 }
 .black_rounded {
-    background-color: black;
-    color: white;
-    border: none;
-    text-align: center;
-    border-radius: 50%;
+	background-color: black;
+	color: white;
+	border: none;
+	text-align: center;
+	border-radius: 50%;
 }
 .black_button {
-    color: white;
-    background: black;
-    box-sizing: border-box;
-    display: block;
-    padding: 10px 28px;
-    border: 0;
-    border-radius: 36px;
-    cursor: pointer;
-    margin-top: -9px;
+	color: white;
+	background: black;
+	box-sizing: border-box;
+	display: block;
+	padding: 10px 28px;
+	border: 0;
+	border-radius: 36px;
+	cursor: pointer;
+	margin-top: -9px;
 }
 .rr{
-    position: relative;
-    height: 30vw;
-    margin: 0 auto;
-    padding-left: 8vw;
-    padding-right: 8vw;
-    width: 70%;
-    max-width: 1203px;
-    overflow: hidden;
-    background: #5628D2;
-    border-radius: 33px;
+	position: relative;
+	height: 30vw;
+	margin: 0 auto;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	width: 70%;
+	max-width: 1203px;
+	overflow: hidden;
+	background: #5628D2;
+	border-radius: 33px;
 }	
 .rr:before{
-    content: "";
-    display: block;
-    /* padding-top: 3vw; */
+	content: "";
+	display: block;
+	/* padding-top: 3vw; */
 }
 .illus {
-    background: url(imgs/cityscapes.svg);
-    background-repeat: no-repeat;
-    position: relative;
-    display: block;
-    left: 10vw;
-    padding-left: 37vw;
-    top: 11.75vw;
-    padding-top: 50vw;
-    float: right;
-    border-radius: 0px 0px 30px 27px;
+	background: url(imgs/cityscapes.svg);
+	background-repeat: no-repeat;
+	position: relative;
+	display: block;
+	left: 10vw;
+	padding-left: 37vw;
+	top: 11.75vw;
+	padding-top: 50vw;
+	float: right;
+	border-radius: 0px 0px 30px 27px;
 }
 .title {
-    position: relative;
-    width: 296px;
-    padding-top: 8vw;
-    font-family: "Prompt", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 2.5vw;
-    display: flex;
-    align-items: center;
-    color: white;
+	position: relative;
+	width: 296px;
+	padding-top: 8vw;
+	font-family: "Prompt", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 2.5vw;
+	display: flex;
+	align-items: center;
+	color: white;
 }
 .subtitle {
-    position: relative;
-    padding-top: 1vw;
-    width: 283px;    
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.35rem;
-    line-height: 1.6vw;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+	position: relative;
+	padding-top: 1vw;
+	width: 283px;    
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.35rem;
+	line-height: 1.6vw;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
 }
 .txt_arr {
-    position: relative;
-    padding-top: 1vw;
-    width: 283px;    
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.35rem;
-    line-height: 1.6vw;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+	position: relative;
+	padding-top: 1vw;
+	width: 283px;    
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.35rem;
+	line-height: 1.6vw;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
 }
 .txt_arr>a{
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.side_content {
+	grid-column: span 4;
+	padding-left: 7vw;
+	padding-top: 3vw;
+	text-align: left;
+}
+.main_content {
+	grid-column: span 8;
+	padding-right: 7vw;
+	padding-top: 3vw;
+}
+@media screen and (max-width: 768px) {
+	.side_content {
+	  grid-column: span 6;
+	}
+	.main_content {
+	  grid-column: span 6;
+	}
+  }
+  @media screen and (max-width: 480px) {
+	.side_content {
+	  grid-column: span 12;
+	}
+	.main_content {
+	  grid-column: span 12;
+	}
+  }
+.content {
+	max-width: 215px;
+}
+.accordion_title {
+    padding: 0.5vw;
+    padding-right: 50px;
+    font-size: 1.4rem;
+	color: #333333;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.accordion_title::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(imgs/plus.svg) no-repeat center;
+    background-size: contain;
+    transition: all .4s ease;
+}
+.open-acc .accordion_title::after {
+    transform: rotate(45deg);
+}
+.accordion_content{
+	display: none;
+}
+.open-acc .accordion_content {
+	display: block;
+}
+.accordion_content>.content_list {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: .9vw;
+	padding: 0.5vw;
+	line-height: 1.3vw;
+	color: #333333;
+	list-style-type: none;
+}
+.content_list>li>a{
+	text-decoration: none;
+	color: inherit;
 }
